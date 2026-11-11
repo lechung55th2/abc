@@ -5,9 +5,17 @@
         "source": "github",
         "repo": "DietrichGebert/ponytail"
       }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
     }
   },
   "enabledPlugins": {
-    "ponytail@ponytail": true
+    "ponytail@ponytail": true,
+    "playwright@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true
   }
 }
