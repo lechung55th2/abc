@@ -31,3 +31,5 @@ Repo của phiên "1% better" (cloud). Chủ nhắn việc qua bot Telegram boca
 - [x] Chống ngủ: LaunchAgent com.chung.nosleep đã chạy (13/11).
 - [x] Con canh `giam_sat` (Táo Newton làm 14/11): mỗi 5 phút canh bot, bocachua, app Claude; báo Telegram khi bật lại thất bại hoặc chết quá 2 lần/giờ.
 - [ ] Thêm vào giam_sat: phiên Claude (Táo Newton, 1% better Mac) mất Remote Control thì tự mở lại và báo Telegram.
+- [ ] Lệnh Telegram `/molai` trong bocachua: khởi động lại app Claude và các phiên từ điện thoại.
+- [ ] Cài Chrome Remote Desktop trên Mac (chủ phải ngồi ở máy ~5 phút) để chủ tự sửa từ iPhone khi Mac mất Remote Control. Nhắc chủ lần tới chủ ở cạnh Mac.
