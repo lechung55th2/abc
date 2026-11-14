@@ -11,6 +11,7 @@ Repo của phiên "1% better" (cloud). Chủ nhắn việc qua bot Telegram boca
 |---|---|---|
 | 11/11 ~11:40 | App Claude đóng hết tab Terminal, mọi bot tắt | App khởi động lại |
 | 13/11 ~03:06 | Mọi phiên trên Mac mất kết nối, Tổng quản bị lưu trữ, cả sáng không ai biết | Remote Control trên Mac tắt; không có gì canh và báo |
+| 14/11 ~13:22 | Táo Newton và 1% better (Mac) mất kết nối, 20 phút sau khi cài giam_sat | Chưa rõ (app Claude khởi động lại hoặc mất mạng). giam_sat chỉ mở app khi app đã tắt, nên không phải thủ phạm. Lỗ hổng: giam_sat canh bot nhưng không canh các phiên Claude |
 
 ## Khi bot trên Mac mất kết nối
 
@@ -27,5 +28,6 @@ Repo của phiên "1% better" (cloud). Chủ nhắn việc qua bot Telegram boca
 
 ## Còn phải làm (cần làm trên Mac)
 
-- [ ] Chạy `mac/giu-may-thuc.sh`.
-- [ ] Con canh: kiểm tra các bot mỗi 5 phút, chết thì tự bật lại **và nhắn Telegram báo chủ**. Phải viết trên Mac, vì chỉ ở đó mới biết lệnh bật từng bot.
+- [x] Chống ngủ: LaunchAgent com.chung.nosleep đã chạy (13/11).
+- [x] Con canh `giam_sat` (Táo Newton làm 14/11): mỗi 5 phút canh bot, bocachua, app Claude; báo Telegram khi bật lại thất bại hoặc chết quá 2 lần/giờ.
+- [ ] Thêm vào giam_sat: phiên Claude (Táo Newton, 1% better Mac) mất Remote Control thì tự mở lại và báo Telegram.
