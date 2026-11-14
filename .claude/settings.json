@@ -17,51 +17,5 @@
     "ponytail@ponytail": true,
     "playwright@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true
-  },
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash|Grep",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "graphify hook-guard search",
-            "timeout": 10
-          }
-        ]
-      },
-      {
-        "matcher": "Read|Glob",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "graphify hook-guard read",
-            "timeout": 10
-          }
-        ]
-      }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "startup|resume",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "command -v graphify >/dev/null 2>&1 || pip install -q graphifyy==0.9.108 >/dev/null 2>&1 || true",
-            "timeout": 120
-          }
-        ]
-      },
-      {
-        "matcher": "compact",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "graphify hook-guard compact",
-            "timeout": 10
-          }
-        ]
-      }
-    ]
   }
 }
